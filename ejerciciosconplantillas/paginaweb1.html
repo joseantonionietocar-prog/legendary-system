@@ -1,6 +1,20 @@
-/* -----------------------------------------------------
-   ESTILOS GENERALES
------------------------------------------------------- */
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Josete</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- ============================
+                 CSS COMPLETO
+    ============================== -->
+    <style>
+
 * {
     margin: 0;
     padding: 0;
@@ -14,36 +28,21 @@ body {
     transition: background 0.3s, color 0.3s;
 }
 
-/* -----------------------------------------------------
-   MODO OSCURO
------------------------------------------------------- */
+/* MODO OSCURO */
 body.dark {
     background: #0f0f0f;
-    color: #e6e6e6;
+    color: #ddd;
 }
 
 body.dark header {
-    background: rgba(30, 30, 30, 0.7);
-    backdrop-filter: blur(10px);
-}
-
-body.dark footer {
-    background: #111;
+    background: rgba(30, 30, 30, 0.6);
 }
 
 body.dark .card {
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255,255,255,0.08);
-    color: #fff;
+    background: rgba(255, 255, 255, 0.05);
+    color: #eee;
 }
 
-body.dark .btn {
-    background: #00b8ff;
-}
-
-/* -----------------------------------------------------
-   HEADER
------------------------------------------------------- */
 header {
     width: 100%;
     position: fixed;
@@ -75,81 +74,66 @@ header {
 .nav-links a {
     color: #fff;
     text-decoration: none;
-    font-weight: 500;
     transition: 0.2s;
 }
 
 .nav-links a:hover {
-    color: #00c3ff;
+    color: #00e7ff;
 }
 
-/* Botón modo oscuro */
-.dark-btn {
-    margin-left: 20px;
-    font-size: 20px;
-    padding: 5px 10px;
-    border-radius: 8px;
+.menu-toggle {
+    display: none;
+    font-size: 26px;
     cursor: pointer;
+}
+
+.dark-btn {
+    margin-left: 15px;
+    font-size: 20px;
+    padding: 6px 10px;
+    border-radius: 8px;
     border: none;
-    background: #fff;
-    color: #000;
-    transition: 0.2s;
+    cursor: pointer;
 }
 
-.dark-btn:hover {
-    background: #00c3ff;
-    color: #000;
-}
-
-/* -----------------------------------------------------
-   HERO / INICIO
------------------------------------------------------- */
+/* HERO */
 .hero {
     height: 100vh;
-    background: linear-gradient(120deg, #004080, #0077b6);
+    background: linear-gradient(120deg, #004080, #0083cc);
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 100px;
     text-align: center;
-    color: #fff;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 .foto-perfil {
-    width: 140px;   /* Más pequeña */
+    width: 140px;
     height: 140px;
     border-radius: 50%;
-    object-fit: cover;
     border: 4px solid rgba(255,255,255,0.8);
+    object-fit: cover;
     margin-bottom: 15px;
 }
 
 .hero h1 {
     font-size: 42px;
-    font-weight: 700;
 }
 
 .hero span {
     color: #00eaff;
 }
 
-.hero p {
-    margin-top: 10px;
-    font-size: 18px;
-    opacity: 0.9;
-}
-
 .btn {
     display: inline-block;
-    margin-top: 25px;
+    margin-top: 20px;
+    padding: 12px 30px;
     background: #00eaff;
-    padding: 12px 35px;
-    color: #000;
     border-radius: 10px;
+    color: #000;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: bold;
     transition: 0.3s;
 }
 
@@ -157,9 +141,7 @@ header {
     background: #fff;
 }
 
-/* -----------------------------------------------------
-   SOBRE MÍ
------------------------------------------------------- */
+/* SOBRE MI */
 .sobre {
     padding: 110px 50px;
     text-align: center;
@@ -169,13 +151,10 @@ header {
 .sobre p {
     max-width: 800px;
     margin: auto;
-    font-weight: 300;
     font-size: 18px;
 }
 
-/* -----------------------------------------------------
-   PORTAFOLIO
------------------------------------------------------- */
+/* PORTAFOLIO */
 .portafolio {
     padding: 110px 50px;
     background: #e7f5ff;
@@ -186,40 +165,199 @@ header {
     margin-bottom: 40px;
 }
 
-/* Tarjetas */
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 25px;
 }
 
-/* --- TARJETAS MEJORADAS --- */
 .card {
-    background: rgba(255, 255, 255, 0.75);
-    border-radius: 15px;
+    background: #fff;
+    border-radius: 14px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     transition: 0.3s;
 }
 
-/* Imagen más pequeña */
 .card img {
     width: 100%;
-    height: 140px;   /* REDUCIDA */
+    height: 140px;
     object-fit: cover;
 }
 
 .card-content {
-    padding: 18px;
+    padding: 15px;
 }
 
-/* Hover elegante */
 .card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.20);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
-/* -----------------------------------------------------
-   CONTACTO
------------------------------------------------------- */
-.conta
+/* CONTACTO */
+.contacto {
+    padding: 110px 50px;
+    text-align: center;
+    background: #fff;
+}
+
+.email {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.social a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0077b6;
+    font-weight: 600;
+}
+
+footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-toggle {
+        display: block;
+        color: #fff;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav.active {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 70px;
+        background: rgba(0,0,0,0.9);
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: right;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <header>
+        <div class="logo">Josete</div>
+
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <button id="dark-mode-toggle" class="dark-btn">🌙</button>
+
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+    </header>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+        <div>
+            <img class="foto-perfil" src="https://via.placeholder.com/180" alt="Foto de Josete">
+            <h1>Hola, soy <span>Josete</span></h1>
+            <p>Desarrollador Web • Diseñador UI/UX • Creador Digital</p>
+            <a class="btn" href="#portafolio">Ver mis proyectos</a>
+        </div>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section id="sobre-mi" class="sobre">
+        <h2>Sobre mí</h2>
+        <p>
+            Soy Josete, un apasionado del diseño digital y el desarrollo web. Me encanta crear proyectos modernos,
+            funcionales y con personalidad. Siempre estoy aprendiendo nuevas tecnologías.
+        </p>
+    </section>
+
+    <!-- PORTAFOLIO -->
+    <section id="portafolio" class="portafolio">
+        <h2>Portafolio</h2>
+
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg" alt="">
+                <div class="card-content">
+                    <h3>Proyecto 1</h3>
+                    <p>Dashboard moderno con estadísticas y diseño UI.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.pexels.com/photos/3861964/pexels-photo-3861964.jpeg" alt="">
+                <div class="card-content">
+                    <h3>Proyecto 2</h3>
+                    <p>Landing page profesional y responsive.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg" alt="">
+                <div class="card-content">
+                    <h3>Proyecto 3</h3>
+                    <p>Aplicación interactiva con animaciones suaves.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <p class="email">josete@example.com</p>
+
+        <div class="social">
+            <a href="#">Instagram</a>
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Josete — Portafolio Profesional</p>
+    </footer>
+
+    <!-- ============================
+                SCRIPTS
+    ============================== -->
+    <script>
+        // Toggle menú
+        document.getElementById("menu-toggle").onclick = () => {
+            document.querySelector(".nav").classList.toggle("active");
+        };
+
+        // Modo oscuro
+        document.getElementById("dark-mode-toggle").onclick = () => {
+            document.body.classList.toggle("dark");
+        };
+    </script>
+
+</body>
+</html>
