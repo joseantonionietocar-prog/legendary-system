@@ -5,36 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio de Josete</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Barra de navegación -->
+    <!-- NAV -->
     <header>
         <div class="logo">Josete</div>
-        <nav>
-            <ul>
+        <nav class="nav">
+            <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobre-mi">Sobre mí</a></li>
                 <li><a href="#portafolio">Portafolio</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
+
+        <div class="menu-toggle" id="menu-toggle">☰</div>
     </header>
 
     <!-- INICIO -->
     <section id="inicio" class="hero">
-        <h1>Hola, soy <span>Josete</span></h1>
-        <p>Desarrollador Web | Diseñador | Creador de contenido digital</p>
-        <a href="#portafolio" class="btn">Ver mis proyectos</a>
+        <div class="hero-content">
+            <h1>Hola, soy <span>Josete</span></h1>
+            <p>Desarrollador Web • Diseñador • Creador Digital</p>
+            <a href="#portafolio" class="btn">Explorar Portafolio</a>
+        </div>
     </section>
 
     <!-- SOBRE MÍ -->
     <section id="sobre-mi" class="sobre">
         <h2>Sobre mí</h2>
         <p>
-            Soy Josete, un apasionado del desarrollo web y la creatividad digital. 
-            Me encanta diseñar y construir sitios modernos, funcionales y adaptados a las necesidades del cliente.
-            Disfruto aprendiendo nuevas tecnologías y transformando ideas en realidad.
+            Hola, soy <b>Josete</b>, un desarrollador web apasionado por crear experiencias digitales 
+            modernas, limpias y funcionales. Me encanta combinar diseño con tecnología y resolver 
+            problemas a través de la creatividad.
         </p>
     </section>
 
@@ -44,16 +51,24 @@
 
         <div class="grid">
             <div class="card">
-                <h3>Proyecto 1</h3>
-                <p>Descripción breve del proyecto o aplicación desarrollada.</p>
+                <div class="card-content">
+                    <h3>Proyecto 1</h3>
+                    <p>Un proyecto enfocado en interfaces modernas y funcionales.</p>
+                </div>
             </div>
+
             <div class="card">
-                <h3>Proyecto 2</h3>
-                <p>Descripción breve del proyecto o diseño realizado.</p>
+                <div class="card-content">
+                    <h3>Proyecto 2</h3>
+                    <p>Aplicación web con diseño intuitivo y responsivo.</p>
+                </div>
             </div>
+
             <div class="card">
-                <h3>Proyecto 3</h3>
-                <p>Descripción breve de otro trabajo destacado.</p>
+                <div class="card-content">
+                    <h3>Proyecto 3</h3>
+                    <p>Desarrollo completo de un sitio profesional.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -61,14 +76,24 @@
     <!-- CONTACTO -->
     <section id="contacto" class="contacto">
         <h2>Contacto</h2>
-        <p>Puedes comunicarte conmigo en:</p>
+        <p>Si quieres hablar sobre un proyecto, duda o idea:</p>
         <p class="email">josete@example.com</p>
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer>
-        <p>© 2025 Josete — Portafolio Profesional</p>
+        <p>© 2025 Josete — Todos los derechos reservados</p>
     </footer>
+
+    <!-- SCRIPT MENU -->
+    <script>
+        const toggle = document.getElementById("menu-toggle");
+        const nav = document.querySelector(".nav");
+
+        toggle.addEventListener("click", () => {
+            nav.classList.toggle("active");
+        });
+    </script>
 
 </body>
 </html>
