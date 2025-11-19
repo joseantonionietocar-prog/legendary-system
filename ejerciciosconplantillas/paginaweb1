@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio Profesional</title>
+    <title>Portafolio de Josete</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- Barra de navegación -->
     <header>
-        <div class="logo">Tu Nombre</div>
+        <div class="logo">Josete</div>
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
@@ -23,8 +23,8 @@
 
     <!-- INICIO -->
     <section id="inicio" class="hero">
-        <h1>Hola, soy <span>Tu Nombre</span></h1>
-        <p>Desarrollador Web | Diseñador | Freelancer</p>
+        <h1>Hola, soy <span>Josete</span></h1>
+        <p>Desarrollador Web | Diseñador | Creador de contenido digital</p>
         <a href="#portafolio" class="btn">Ver mis proyectos</a>
     </section>
 
@@ -32,9 +32,9 @@
     <section id="sobre-mi" class="sobre">
         <h2>Sobre mí</h2>
         <p>
-            Soy un profesional apasionado por la tecnología y el desarrollo web. 
-            Me especializo en crear sitios modernos, funcionales y responsive. 
-            Me gusta resolver problemas y aprender nuevas herramientas constantemente.
+            Soy Josete, un apasionado del desarrollo web y la creatividad digital. 
+            Me encanta diseñar y construir sitios modernos, funcionales y adaptados a las necesidades del cliente.
+            Disfruto aprendiendo nuevas tecnologías y transformando ideas en realidad.
         </p>
     </section>
 
@@ -45,15 +45,15 @@
         <div class="grid">
             <div class="card">
                 <h3>Proyecto 1</h3>
-                <p>Descripción breve del proyecto.</p>
+                <p>Descripción breve del proyecto o aplicación desarrollada.</p>
             </div>
             <div class="card">
                 <h3>Proyecto 2</h3>
-                <p>Descripción breve del proyecto.</p>
+                <p>Descripción breve del proyecto o diseño realizado.</p>
             </div>
             <div class="card">
                 <h3>Proyecto 3</h3>
-                <p>Descripción breve del proyecto.</p>
+                <p>Descripción breve de otro trabajo destacado.</p>
             </div>
         </div>
     </section>
@@ -61,13 +61,13 @@
     <!-- CONTACTO -->
     <section id="contacto" class="contacto">
         <h2>Contacto</h2>
-        <p>Puedes escribirme a:</p>
-        <p class="email">tunombre@email.com</p>
+        <p>Puedes comunicarte conmigo en:</p>
+        <p class="email">josete@example.com</p>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 Tu Nombre — Portafolio Profesional</p>
+        <p>© 2025 Josete — Portafolio Profesional</p>
     </footer>
 
 </body>
